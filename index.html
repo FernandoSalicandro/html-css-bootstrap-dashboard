@@ -1,12 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
+
 <body>
+
+    <nav class="navbar  navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/duck.png" alt="" width="30"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Anagrafica Utenti</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Storico Prestitii</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 bg-light border-white" type="search" placeholder="Cerca"
+                        aria-label="Search">
+                    <button class="btn btn-outline-dark text-white border-white" type="submit">Cerca</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section id="libri">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h1>Catalogo Libri</h1>
+                        <div class="btn btn-primary">Aggiungi Libro</div>
+                    </div>
     
+                    <table class="table table-striped my-5">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="col-lg-5">Titolo</th>
+                                <th scope="col" class="col-lg-3 d-none d-md-table-cell">Data Prestito</th>
+                                <th scope="col" class="col-lg-2">Stato</th>
+                                <th scope="col" class="col-lg-2">Azioni</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Libro</td>
+                                <td class="d-none d-md-table-cell">.</td>
+                                <td><div class="badge text-bg-success">Disponibile</div></td>
+                                <td class="d-flex">
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Libro</td>
+                                <td class="d-none d-md-table-cell">.</td>
+                                <td><div class="badge text-bg-danger">Non disponibile</div></td>
+                                <td class="d-flex">
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Libro</td>
+                                <td class="d-none d-md-table-cell">10/10/2030</td>
+                                <td><div class="badge bg-warning text-white">In prestito</div></td>
+                                <td class="d-flex">
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Libro</td>
+                                <td class="d-none d-md-table-cell">.</td>
+                                <td><div class="badge text-bg-danger">Non disponibile</div></td>
+                                <td class="d-flex">
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Libro</td>
+                                <td class="d-none d-md-table-cell">.</td>
+                                <td><div class="badge text-bg-danger">Non disponibile</div></td>
+                                <td class="d-flex">
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Libro</td>
+                                <td class="d-none d-md-table-cell">.</td>
+                                <td><div class="badge text-bg-success">Disponibile</div></td>
+                                <td class="d-flex">
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Libro</td>
+                                <td class="d-none d-md-table-cell">.</td>
+                                <td><div class="badge text-bg-success">Disponibile</div></td>
+                                <td class="d-flex">
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Libro</td>
+                                <td class="d-none d-md-table-cell">10/12/2032</td>
+                                <td><div class="badge bg-warning text-white">In prestito</div></td>
+                                <td class="d-flex">
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Libro</td>
+                                <td class="d-none d-md-table-cell">.</td>
+                                <td><div class="badge bg-warning text-white">In prestito</div></td>
+                                <td class="d-flex">
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Libro</td>
+                                <td class="d-none d-md-table-cell">.</td>
+                                <td><div class="badge text-bg-success">Disponibile</div></td>
+                                <td class="d-flex">
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Libro</td>
+                                <td class="d-none d-md-table-cell">05/06/2045</td>
+                                <td><div class="badge text-bg-success">Disponibile</div></td>
+                                <td class="d-flex">
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Libro</td>
+                                <td class="d-none d-md-table-cell">.</td>
+                                <td><div class="badge text-bg-danger">Non disponibile</div></td>
+                                <td class="d-flex">
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+                <div class=" col-md-12 col-lg-5">
+                   
+                    <div class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, nulla aspernatur! A, beatae at. Praesentium repudiandae, ab assumenda recusandae aliquam excepturi quas numquam et totam autem dolorem placeat. Fuga, earum?</div>
+                    <div class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nemo rerum recusandae impedit suscipit, debitis sint maiores consequatur ullam fugiat? Atque nulla eligendi dicta harum optio consequatur, corporis reprehenderit culpa.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 </body>
+
 </html>
