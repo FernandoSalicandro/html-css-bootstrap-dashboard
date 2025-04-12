@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="html" href="./checkout.html">
 
-    <title>Document</title>
+    <title>Dashboard Libri</title>
 </head>
 
 <body>
 
+    <!-- NAVBAR  -->
+
     <nav class="navbar  navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./img/duck.png" alt="" width="30"></a>
+                <img src="./img/duck.png" alt="" width="30" height=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -44,7 +48,7 @@
                 <form class="d-flex" role="search">
                     <input class="form-control me-2 bg-light border-white" type="search" placeholder="Cerca"
                         aria-label="Search">
-                    <button class="btn btn-outline-dark text-white border-white" type="submit">Cerca</button>
+                    <button class="btn btn-outline-light text-white border-white" type="submit">Cerca</button>
                 </form>
             </div>
         </div>
@@ -53,12 +57,12 @@
     <section id="libri">
         <div class="container my-5">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-8">
                     <div class="d-flex justify-content-between align-items-center">
                         <h1>Catalogo Libri</h1>
                         <div class="btn btn-primary">Aggiungi Libro</div>
                     </div>
-    
+
                     <table class="table table-striped my-5">
                         <thead>
                             <tr>
@@ -72,189 +76,260 @@
                             <tr>
                                 <td>Libro</td>
                                 <td class="d-none d-md-table-cell">.</td>
-                                <td><div class="badge text-bg-success">Disponibile</div></td>
+                                <td>
+                                    <div class="badge text-bg-success">Disponibile</div>
+                                </td>
                                 <td class="d-flex">
-                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
                                     <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Harry Potter e la pietra filosofale</td>
                                 <td class="d-none d-md-table-cell">.</td>
-                                <td><div class="badge text-bg-danger">Non disponibile</div></td>
+                                <td>
+                                    <div class="badge text-bg-danger">Non disponibile</div>
+                                </td>
                                 <td class="d-flex">
-                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
                                     <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Libro</td>
                                 <td class="d-none d-md-table-cell">10/10/2030</td>
-                                <td><div class="badge bg-warning text-white">In prestito</div></td>
+                                <td>
+                                    <div class="badge bg-warning text-white">In prestito</div>
+                                </td>
                                 <td class="d-flex">
-                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
                                     <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Libro</td>
                                 <td class="d-none d-md-table-cell">.</td>
-                                <td><div class="badge text-bg-danger">Non disponibile</div></td>
+                                <td>
+                                    <div class="badge text-bg-danger">Non disponibile</div>
+                                </td>
                                 <td class="d-flex">
-                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
                                     <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Libro</td>
                                 <td class="d-none d-md-table-cell">.</td>
-                                <td><div class="badge text-bg-danger">Non disponibile</div></td>
+                                <td>
+                                    <div class="badge text-bg-danger">Non disponibile</div>
+                                </td>
                                 <td class="d-flex">
-                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
                                     <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Libro</td>
                                 <td class="d-none d-md-table-cell">.</td>
-                                <td><div class="badge text-bg-success">Disponibile</div></td>
+                                <td>
+                                    <div class="badge text-bg-success">Disponibile</div>
+                                </td>
                                 <td class="d-flex">
-                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
                                     <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Libro</td>
                                 <td class="d-none d-md-table-cell">.</td>
-                                <td><div class="badge text-bg-success">Disponibile</div></td>
+                                <td>
+                                    <div class="badge text-bg-success">Disponibile</div>
+                                </td>
                                 <td class="d-flex">
-                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
                                     <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Libro</td>
                                 <td class="d-none d-md-table-cell">10/12/2032</td>
-                                <td><div class="badge bg-warning text-white">In prestito</div></td>
+                                <td>
+                                    <div class="badge bg-warning text-white">In prestito</div>
+                                </td>
                                 <td class="d-flex">
-                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
                                     <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Libro</td>
                                 <td class="d-none d-md-table-cell">.</td>
-                                <td><div class="badge bg-warning text-white">In prestito</div></td>
+                                <td>
+                                    <div class="badge bg-warning text-white">In prestito</div>
+                                </td>
                                 <td class="d-flex">
-                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
                                     <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Libro</td>
                                 <td class="d-none d-md-table-cell">.</td>
-                                <td><div class="badge text-bg-success">Disponibile</div></td>
+                                <td>
+                                    <div class="badge text-bg-success">Disponibile</div>
+                                </td>
                                 <td class="d-flex">
-                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
                                     <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Libro</td>
                                 <td class="d-none d-md-table-cell">05/06/2045</td>
-                                <td><div class="badge text-bg-success">Disponibile</div></td>
+                                <td>
+                                    <div class="badge text-bg-success">Disponibile</div>
+                                </td>
                                 <td class="d-flex">
-                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
                                     <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Libro</td>
                                 <td class="d-none d-md-table-cell">.</td>
-                                <td><div class="badge text-bg-danger">Non disponibile</div></td>
+                                <td>
+                                    <div class="badge text-bg-danger">Non disponibile</div>
+                                </td>
                                 <td class="d-flex">
-                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i></div>
+                                    <div class="btn btn-outline-secondary"><i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
                                     <div class="btn btn-outline-secondary"><i class="fa-regular fa-trash-can"></i></div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-    
-                <div class=" col-md-12 col-lg-5">
-                   
+
+                <div class=" col-md-12 col-lg-4">
+
                     <div class="pb-3">
                         <div class="card">
-                            <div class="card-header"><h3>Todo</h3></div>
-                        <ul class="list-group p-4">
-                            <li class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                              <label class="form-check-label" for="firstCheckbox">Chiamare Segreteria</label>
-                            </li>
-                            <li class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                              <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti scaduti</label>
-                            </li>
-                            <li class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                              <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
-                            </li>
-                          </ul>
+                            <div class="card-header">
+                                <h3>Todo</h3>
+                            </div>
+                            <ul class="list-group d-flex p-3">
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                    <label class="form-check-label" for="firstCheckbox">Chiamare Segreteria</label>
+                                </li>
+                                <li class="list-group-item d-flex">
+                                    <input class="form-check-input me-1 d-flex" type="checkbox" value=""
+                                        id="secondCheckbox">
+                                    <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti
+                                        scaduti</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                    <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="pb-3">
                         <div class="card">
-                            <div class="card-header"><h3>F.A.Q.</h3></div>
+                            <div class="card-header">
+                                <h3>F.A.Q.</h3>
+                            </div>
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                      Come aggiungere un nuovo libro?
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Come aggiungere un nuovo libro?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong> It is shown by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
                                     </div>
-                                  </div>
                                 </div>
                                 <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                      Come posso accedere all'anagrafica utenti?
-                                    </button>
-                                  </h2>
-                                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Come posso accedere all'anagrafica utenti?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
                                     </div>
-                                  </div>
                                 </div>
                                 <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                      Posso usare questa dashboard da Mobile?
-                                    </button>
-                                  </h2>
-                                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Posso usare questa dashboard da Mobile?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
                                     </div>
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
 
 
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
-    crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
